@@ -12,7 +12,7 @@
 * Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2020/tree/master/Slides/MICP
 * Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2020/tree/master/Slides/Dynamical_systems_with_constraints
 
-# Videos:
+# Last year's videos:
 * Lecture 1: [part 1](https://youtu.be/56ZVzQcCdQk), [part 2](https://youtu.be/VwmmfpipHTc)
 * Lecture 2: [part 1](https://youtu.be/wc3UT7IZs98), [part 2](https://youtu.be/4iA4CFzyELg), [part 3](https://youtu.be/EdrsJ-l9VLs)
 * Lecture 3: [part 1](https://youtu.be/sTYvIrjrBbQ), [part 2](https://youtu.be/4JUgkA7lWo8), [part 3](https://youtu.be/XGThWt5H6jw)
