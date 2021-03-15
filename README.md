@@ -1,16 +1,16 @@
 # Slides:
-* Lecture 1 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Introduction
-* Lecture 2 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Linear_Algebra_Four_Fundamental_Subspaces
-* Lecture 3 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2
-* Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case
-* Lecture 5 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Least_Squares_and_Quadratic_Programming
-* Lecture 6 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Domain_Convex_Domains
-* Lecture 7 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Linear_inequality_representation_of_convex_domains
-* Lecture 8 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/QCQP_SOCP
-* Lecture 9 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Linear_Programming
-* Lecture 10 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/SDP
-* Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/MICP
-* Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/master/Slides/Dynamical_systems_with_constraints
+* Lecture 1 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Introduction
+* Lecture 2 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Linear_Algebra_Four_Fundamental_Subspaces
+* Lecture 3 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2
+* Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case
+* Lecture 5 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Least_Squares_and_Quadratic_Programming
+* Lecture 6 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Domain_Convex_Domains
+* Lecture 7 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Linear_inequality_representation_of_convex_domains
+* Lecture 8 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/QCQP_SOCP
+* Lecture 9 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Linear_Programming
+* Lecture 10 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/SDP
+* Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/MICP
+* Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2021/tree/main/Slides/Dynamical_systems_with_constraints
 
 # Last year's videos:
 * Lecture 1: [part 1](https://youtu.be/56ZVzQcCdQk), [part 2](https://youtu.be/VwmmfpipHTc)
