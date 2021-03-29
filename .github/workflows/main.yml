@@ -191,6 +191,6 @@ jobs:
           git add Slides/SDP/main.pdf
           git add Slides/MICP/main.pdf
           git add Slides/Dynamical_systems_with_constraints/main.pdf
-          
+
           git commit -m "Update compiled PDFs"
           git push
