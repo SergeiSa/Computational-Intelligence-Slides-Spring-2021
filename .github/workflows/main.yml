@@ -31,72 +31,6 @@ jobs:
           root_file: main.tex
           working_directory: Slides/NullRowProjector/
 
-      - name: Compile LaTeX document Linear_Algebra_Four_Fundamental_Subspaces_part2
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2/
-
-      - name: Compile LaTeX document Linear_Algebra_Four_Fundamental_Subspaces_use_case
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case/
-
-      - name: Compile LaTeX document Least_Squares_and_Quadratic_Programming
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/Least_Squares_and_Quadratic_Programming/
-
-      - name: Compile LaTeX document Domain_Convex_Domains
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/Domain_Convex_Domains/
-
-      - name: Compile LaTeX document Linear_inequality_representation_of_convex_domains
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/Linear_inequality_representation_of_convex_domains/
-
-      - name: Compile LaTeX document QCQP_SOCP
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/QCQP_SOCP/
-
-      - name: Compile LaTeX document Linear_Programming
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/Linear_Programming/
-
-      - name: Compile LaTeX document SDP
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/SDP/
-
-      - name: Compile LaTeX document SDP
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/SDP/
-
-      - name: Compile LaTeX document MICP
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/MICP/
-
-      - name: Compile LaTeX document Dynamical_systems_with_constraints
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: main.tex
-          working_directory: Slides/Dynamical_systems_with_constraints/
-
 
 
       - name: Save Introduction artifact
@@ -111,67 +45,6 @@ jobs:
           name: NullRowProjector.pdf
           path: Slides/NullRowProjector/main.pdf
 
-      - name: Save Linear_Algebra_Four_Fundamental_Subspaces_part2 artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: Linear_Algebra_Four_Fundamental_Subspaces_part2.pdf
-          path: Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2/main.pdf
-
-      - name: Save Linear_Algebra_Four_Fundamental_Subspaces_use_case artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: Linear_Algebra_Four_Fundamental_Subspaces_use_case.pdf
-          path: Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case/main.pdf
-
-      - name: Save Least_Squares_and_Quadratic_Programming artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: Least_Squares_and_Quadratic_Programming.pdf
-          path: Slides/Least_Squares_and_Quadratic_Programming/main.pdf
-
-      - name: Save Domain_Convex_Domains artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: Domain_Convex_Domains.pdf
-          path: Slides/Domain_Convex_Domains/main.pdf
-
-      - name: Save Linear_inequality_representation_of_convex_domains artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: Linear_inequality_representation_of_convex_domains.pdf
-          path: Slides/Linear_inequality_representation_of_convex_domains/main.pdf
-
-      - name: Save QCQP_SOCP artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: QCQP_SOCP.pdf
-          path: Slides/QCQP_SOCP/main.pdf
-
-      - name: Save Linear_Programming artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: Linear_Programming.pdf
-          path: Slides/Linear_Programming/main.pdf
-
-      - name: Save SDP artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: SDP.pdf
-          path: Slides/SDP/main.pdf
-
-      - name: Save MICP artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: MICP.pdf
-          path: Slides/MICP/main.pdf
-
-      - name: Save Dynamical_systems_with_constraints artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: Dynamical_systems_with_constraints.pdf
-          path: Slides/Dynamical_systems_with_constraints/main.pdf
-
-
 
 
       - name: Update compiled PDFs in git repository
@@ -181,16 +54,6 @@ jobs:
           git config --global user.email '<>'
           git add Slides/Introduction/main.pdf
           git add Slides/NullRowProjector/main.pdf
-          git add Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2/main.pdf
-          git add Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case/main.pdf
-          git add Slides/Least_Squares_and_Quadratic_Programming/main.pdf
-          git add Slides/Domain_Convex_Domains/main.pdf
-          git add Slides/Linear_inequality_representation_of_convex_domains/main.pdf
-          git add Slides/QCQP_SOCP/main.pdf
-          git add Slides/Linear_Programming/main.pdf
-          git add Slides/SDP/main.pdf
-          git add Slides/MICP/main.pdf
-          git add Slides/Dynamical_systems_with_constraints/main.pdf
 
           git commit -m "Update compiled PDFs"
           git push
