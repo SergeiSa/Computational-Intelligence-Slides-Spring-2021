@@ -24,80 +24,80 @@ jobs:
         with:
           root_file: main.tex
           working_directory: Slides/Introduction/
-          
+
       - name: Compile LaTeX document Linear_Algebra_Four_Fundamental_Subspaces
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Linear_Algebra_Four_Fundamental_Subspaces/
-          
+
       - name: Compile LaTeX document Linear_Algebra_Four_Fundamental_Subspaces_part2
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2/
-          
+
       - name: Compile LaTeX document Linear_Algebra_Four_Fundamental_Subspaces_use_case
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case/
-          
+
       - name: Compile LaTeX document Least_Squares_and_Quadratic_Programming
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Least_Squares_and_Quadratic_Programming/
-          
+
       - name: Compile LaTeX document Domain_Convex_Domains
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Domain_Convex_Domains/
-          
+
       - name: Compile LaTeX document Linear_inequality_representation_of_convex_domains
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Linear_inequality_representation_of_convex_domains/
-          
+
       - name: Compile LaTeX document QCQP_SOCP
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/QCQP_SOCP/
-          
+
       - name: Compile LaTeX document Linear_Programming
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Linear_Programming/
-          
+
       - name: Compile LaTeX document SDP
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/SDP/
-          
+
       - name: Compile LaTeX document SDP
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/SDP/
-          
+
       - name: Compile LaTeX document MICP
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/MICP/
-          
+
       - name: Compile LaTeX document Dynamical_systems_with_constraints
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Dynamical_systems_with_constraints/
-          
-          
+
+
 
       - name: Save Introduction artifact
         uses: actions/upload-artifact@v1
@@ -171,9 +171,9 @@ jobs:
           name: Dynamical_systems_with_constraints.pdf
           path: Slides/Dynamical_systems_with_constraints/main.pdf
 
-                   
-          
-          
+
+
+
       - name: Update compiled PDFs in git repository
         if: github.event.pull_request.merged == true || (github.event_name == 'push' && github.ref == 'refs/heads/master')
         run: |
