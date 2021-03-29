@@ -25,11 +25,11 @@ jobs:
           root_file: main.tex
           working_directory: Slides/Introduction/
 
-      - name: Compile LaTeX document Linear_Algebra_Four_Fundamental_Subspaces
+      - name: Compile LaTeX document NullRowProjector
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
-          working_directory: Slides/Linear_Algebra_Four_Fundamental_Subspaces/
+          working_directory: Slides/NullRowProjector/
 
       - name: Compile LaTeX document Linear_Algebra_Four_Fundamental_Subspaces_part2
         uses: xu-cheng/latex-action@master
@@ -105,11 +105,11 @@ jobs:
           name: Introduction.pdf
           path: Slides/Introduction/main.pdf
 
-      - name: Save Linear_Algebra_Four_Fundamental_Subspaces artifact
+      - name: Save NullRowProjector artifact
         uses: actions/upload-artifact@v1
         with:
-          name: Linear_Algebra_Four_Fundamental_Subspaces.pdf
-          path: Slides/Linear_Algebra_Four_Fundamental_Subspaces/main.pdf
+          name: NullRowProjector.pdf
+          path: Slides/NullRowProjector/main.pdf
 
       - name: Save Linear_Algebra_Four_Fundamental_Subspaces_part2 artifact
         uses: actions/upload-artifact@v1
@@ -180,7 +180,7 @@ jobs:
           git config --global user.name 'CI PDF compiler'
           git config --global user.email '<>'
           git add Slides/Introduction/main.pdf
-          git add Slides/Linear_Algebra_Four_Fundamental_Subspaces/main.pdf
+          git add Slides/NullRowProjector/main.pdf
           git add Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2/main.pdf
           git add Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case/main.pdf
           git add Slides/Least_Squares_and_Quadratic_Programming/main.pdf
