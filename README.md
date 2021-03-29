@@ -1,6 +1,6 @@
 # Slides:
 * Lecture 1 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Introduction
-* Lecture 2 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Algebra_Four_Fundamental_Subspaces
+* Lecture 2 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/NullRowProjector
 * Lecture 3 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Algebra_Four_Fundamental_Subspaces_part2
 * Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case
 * Lecture 5 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Least_Squares_and_Quadratic_Programming
