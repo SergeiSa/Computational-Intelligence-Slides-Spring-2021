@@ -2,9 +2,9 @@
 * Lecture 1 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Introduction
 * Lecture 2 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/NullRowProjector
 * Lecture 3 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/ColumnLeftNullApplications
-* 
-* Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Algebra_Four_Fundamental_Subspaces_use_case
-* Lecture 5 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Least_Squares_and_Quadratic_Programming
+* Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Least_Squares_and_Quadratic_Programming
+
+
 * Lecture 6 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Domain_Convex_Domains
 * Lecture 7 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_inequality_representation_of_convex_domains
 * Lecture 8 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/QCQP_SOCP
