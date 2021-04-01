@@ -49,6 +49,14 @@ jobs:
           root_file: main.tex
           working_directory: Slides/ConvexDomains/
 
+      - name: Compile LaTeX document LMI_ConvexDomains
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: main.tex
+          working_directory: Slides/LMI_ConvexDomains/
+
+
+
 
 
       - name: Save Introduction artifact
@@ -81,6 +89,13 @@ jobs:
           name: ConvexDomains.pdf
           path: Slides/ConvexDomains/main.pdf
 
+      - name: Save LMI_ConvexDomains artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: LMI_ConvexDomains.pdf
+          path: Slides/LMI_ConvexDomains/main.pdf
+
+
 
 
       - name: Update compiled PDFs in git repository
@@ -93,6 +108,7 @@ jobs:
           git add Slides/ColumnLeftNullApplications/main.pdf
           git add Slides/LeastSquares_QuadraticProgramming/main.pdf
           git add Slides/ConvexDomains/main.pdf
+          git add Slides/LMI_ConvexDomains/main.pdf
 
           git commit -m "Update compiled PDFs"
           git push
