@@ -245,11 +245,11 @@ We are required to find all solutions to the equation $(\bo{A} - \bo{B}\bo{K})\b
 
 \bigskip
 
-We can easily find particular solution to this linear system: $\bo{v}^p = -\begin{bmatrix} (\bo{A} - \bo{B}\bo{K}) & \bo{B} \end{bmatrix}^+\bo{c}$. 
+We can easily find particular solution for this linear system: $\bo{v}^p = -\begin{bmatrix} (\bo{A} - \bo{B}\bo{K}) & \bo{B} \end{bmatrix}^+\bo{c}$. 
 
 \bigskip
 
-Finding null space basis $\bo{N}$ for the matrix of this linear system: $\bo{N} = \text{null}(\begin{bmatrix} (\bo{A} - \bo{B}\bo{K}) & \bo{B} \end{bmatrix})$ we get the general solution as follows: $\bo{v}^* = \bo{v}^p + \bo{N}\bo{z}$. First $n$ equations in the expression defining $\bo{v}^*$ give us $\bo{x}^*$, the rest - $\bo{u}^*$.
+Finding null space basis $\bo{N} = \text{null}(\begin{bmatrix} (\bo{A} - \bo{B}\bo{K}) & \bo{B} \end{bmatrix})$ we get the general solution as follows: $\bo{v}^* = \bo{v}^p + \bo{N}\bo{z}$. First $n$ equations in the expression defining $\bo{v}^*$ give us $\bo{x}^*$, the rest - $\bo{u}^*$.
 
 \end{flushleft}
 \end{frame}
@@ -275,6 +275,7 @@ Find such control inputs $\mathbf{u}^*_1$, $\mathbf{u}^*_2$ that state $\mathbf{
 This can be formulated in the language of optimization as follows:
 
 \begin{equation}
+\label{eq:task_u1u2}
 \begin{aligned}
 & \underset{\mathbf{u}_1, \mathbf{u}_2}{\text{minimize}}
 & & || \mathbf{u}_2 ||, \\
@@ -291,13 +292,13 @@ This can be formulated in the language of optimization as follows:
 \framesubtitle{part 2}
 \begin{flushleft}
 
-In order to check that the problem has at least one solution we need to make sure that there are such inputs $\mathbf{u}^*_1$, $\mathbf{u}^*_2$ that state $\mathbf{x}^*$ becomes a fixed point. In other words, vector $\mathbf{A}\mathbf{x}^*$ should lie in the span of the columns of the matrix $[\mathbf{B}_1 \ \mathbf{B}_2]$. Which is the same as saying that its projection on the compliment on this column space (left null space of $[\mathbf{B}_1 \ \mathbf{B}_2]$) is zero:
+To check that the problem has at least one solution, we need to make sure that there are such inputs $\mathbf{u}^*_1$, $\mathbf{u}^*_2$ that state $\mathbf{x}^*$ becomes a fixed point. In other words, vector $\mathbf{A}\mathbf{x}^*$ should lie in the span of the columns of the matrix $[\mathbf{B}_1 \ \mathbf{B}_2]$. Which is the same as saying that its projection on the left null space of $[\mathbf{B}_1 \ \mathbf{B}_2]$ is zero:
 
 \begin{equation}
     (\mathbf{I} - [\mathbf{B}_1 \ \mathbf{B}_2] [\mathbf{B}_1 \ \mathbf{B}_2]^+) \mathbf{A}\mathbf{x}^* = \mathbf{0}
 \end{equation}
 
-All solutions to the problem $\mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}_1 + \mathbf{B}_2 \mathbf{u}_2 = \mathbf{0}$ can be found as:
+All solutions of the eq. $\mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}_1 + \mathbf{B}_2 \mathbf{u}_2 = \mathbf{0}$ can be found as:
 
 \begin{equation}
     \mathbf{u} = - [\mathbf{B}_1 \ \mathbf{B}_2]^+ \mathbf{A}\mathbf{x}^* + \text{null}([\mathbf{B}_1 \ \mathbf{B}_2])\mathbf{z}, \ \forall \mathbf{z}
@@ -312,11 +313,11 @@ All solutions to the problem $\mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}_
 \framesubtitle{part 3}
 \begin{flushleft}
 
-Now we need to pick one solution out of all of them, based on the criteria that it minimizes $\mathbf{u}_2$. We can solve it as an optimization (by thinking about the derivatives of the objective/cost function), but it can also be solved as a projection.
+Now we need to pick the solution that minimizes $\mathbf{u}_2$. We can solve it as an optimization (by thinking about the derivatives of the objective/cost function), but it can also be solved as a projection.
 
 \bigskip
 
-Let us define projector $\mathbf{P} = \mathbf{B}_1 \mathbf{B}^+_1$. We can prove that $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$. Assume $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{a}$, then $\mathbf{u}^*_2 =  \mathbf{u}^0_2 + \mathbf{u}^a_2$, where $\mathbf{u}^0_2$ is in the null space of $\mathbf{P} \mathbf{B}_2$ and $\mathbf{u}^a_2$ is in the row space of $\mathbf{P} \mathbf{B}_2$, or equivalently $\mathbf{P} \mathbf{B}_2 \mathbf{u}^0_2 = \mathbf{0}$,$\mathbf{P} \mathbf{B}_2 \mathbf{u}^a_2 = \mathbf{a}$, $(\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^a_2 = \mathbf{0}$. This gives us solution:
+Let us define projector $\mathbf{P} = \mathbf{B}_1 \mathbf{B}^+_1$. \textcolor{mydarkgreen}{We can prove that $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$}. Assume $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{a}$, then $\mathbf{u}^*_2 =  \mathbf{u}^0_2 + \mathbf{u}^a_2$, where $\mathbf{u}^0_2$ is in the null space of $\mathbf{P} \mathbf{B}_2$ and $\mathbf{u}^a_2$ is in the row space of $\mathbf{P} \mathbf{B}_2$, or equivalently $\mathbf{P} \mathbf{B}_2 \mathbf{u}^0_2 = \mathbf{0}$ and $\mathbf{P} \mathbf{B}_2 \mathbf{u}^a_2 = \mathbf{a}$. This gives us solution:
 
 \begin{equation}
     \mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}^*_1 + \mathbf{B}_2 \mathbf{u}^0_2 + \mathbf{B}_2 \mathbf{u}^a_2 = \mathbf{0}
@@ -330,7 +331,7 @@ Let us define projector $\mathbf{P} = \mathbf{B}_1 \mathbf{B}^+_1$. We can prove
 \framesubtitle{part 4}
 \begin{flushleft}
 
-But since $\mathbf{a} \in \text{span}(\mathbf{B}_1)$ we can also provide an alternative solution:
+But since $\mathbf{a} \in \text{span}(\mathbf{B}_1) = \text{span}(\mathbf{P})$ we can also provide an alternative solution:
 
 \begin{equation}
     \mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}^a_1 + \mathbf{B}_2 \mathbf{u}^0_2 = \mathbf{0}
@@ -340,11 +341,11 @@ where $\mathbf{u}^a_1 = \mathbf{u}^*_1 + \mathbf{B}^+_1 \mathbf{a}$.
 
 \bigskip
 
-Since $\mathbf{u}^0_2$ and $\mathbf{u}^a_2$ and belong to orthogonal subspaces, $||\mathbf{u}^0_2 + \mathbf{u}^a_2|| \geq ||\mathbf{u}^0_2||$. Therefore the alternative solution provides smaller norm $\mathbf{u}_2$, hence $\mathbf{a} = \mathbf{0}$ and $\mathbf{u}^a_2 = \mathbf{0}$ and $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$.
+Since $\mathbf{u}^0_2$ and $\mathbf{u}^a_2$ belong to orthogonal subspaces, $||\mathbf{u}^0_2 + \mathbf{u}^a_2|| \geq ||\mathbf{u}^0_2||$. Therefore the alternative solution provides a smaller norm value for $\mathbf{u}_2$, hence $\mathbf{u}^a_2 = \mathbf{0}$ and $\mathbf{a} = \mathbf{0}$ and $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$.
 
 \bigskip
 
-Since $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$, $(\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{B}_2\mathbf{u}^*_2$, and while $(\mathbf{I} - \mathbf{P}) \mathbf{B}_1 = \mathbf{0}$.
+Since $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$ and $\mathbf{P} \mathbf{B}_1 = \mathbf{B}_1$ we can observe that $(\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{B}_2\mathbf{u}^*_2$ and $(\mathbf{I} - \mathbf{P}) \mathbf{B}_1 = \mathbf{0}$.
 
 
 \end{flushleft}
@@ -360,10 +361,11 @@ Since $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$, $(\mathbf{I} - \mat
  Multiplying our constraint by $(\mathbf{I} - \mathbf{P})$ we attain:
 
 \begin{equation}
+\label{eq:projected}
     (\mathbf{I} - \mathbf{P}) \mathbf{A} \mathbf{x}^* + (\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}
 \end{equation}
 
-Which has an exact solution:
+Since $(\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{B}_2\mathbf{u}^*_2$, as a constraint on $\mathbf{u}^*_2$ equation \eqref{eq:projected} is equivalent to \eqref{eq:task_u1u2}. Eq. \eqref{eq:projected} has exact solution:
 
 \begin{equation}
 \label{Solution_u2}
