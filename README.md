@@ -15,9 +15,10 @@
 
 
 # Lecture videos:
-* Lecture 1, 2: https://youtu.be/YB-Pm6dPR7s
-* Lecture 2, 3: https://youtu.be/B25aDL0knIQ
-* Lecture 3: https://youtu.be/G3698D8lMk4
+* Class 1: https://youtu.be/YB-Pm6dPR7s
+* Class 2: https://youtu.be/B25aDL0knIQ
+* Class 3: https://youtu.be/G3698D8lMk4
+* Class 4: https://youtu.be/sU9H3KIdl_Q
 
 # Last year's videos:
 * Lecture 1: [part 1](https://youtu.be/56ZVzQcCdQk), [part 2](https://youtu.be/VwmmfpipHTc)
