@@ -17,6 +17,7 @@
 # Lecture videos:
 * Lecture 1, 2: https://youtu.be/YB-Pm6dPR7s
 * Lecture 2, 3: https://youtu.be/B25aDL0knIQ
+* Lecture 3: https://youtu.be/G3698D8lMk4
 
 # Last year's videos:
 * Lecture 1: [part 1](https://youtu.be/56ZVzQcCdQk), [part 2](https://youtu.be/VwmmfpipHTc)
