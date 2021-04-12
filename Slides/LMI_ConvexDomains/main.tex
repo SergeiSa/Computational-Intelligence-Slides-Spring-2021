@@ -23,7 +23,8 @@
 \item Construction. Simple case
 \item Construction. General case
 \item Combination
-\item Formal description via inequalities
+\item H-representation
+\item V-representation
 \end{itemize}
 \item Linear approximation of convex regions
 \item Homework
@@ -44,6 +45,21 @@ Before defining what a convex polytope is, let us look at examples:
 \end{flushleft}
 \end{frame}
 
+
+\begin{frame}{Convex polytopes}
+% \framesubtitle{Parameter estimation}
+\begin{flushleft}
+
+You can think of polytopes as geometric figures (or continuous sets of points) with linear edges, faces and higher-dimensional analogues.
+
+\bigskip
+
+\begin{definition}
+ Convex polytopes are polytopes whose every two points can be connected with a line that would lie in the polytope. They can be bounded or unbounded.
+\end{definition}
+ 
+\end{flushleft}
+\end{frame}
 
 
 \begin{frame}{Half-spaces}
@@ -82,8 +98,8 @@ It is easy to see that this half-space can be defined as "all vectors $\mathbf{x
 In the general case there is some distance between the boundary of the half-space and the origin, let's say $d$.
 
 \include{fig4}
-
-The same way we see, that the half space can be defined as "all vectors $\mathbf{x}$, such that $\mathbf{n} \cdot \mathbf{x} \leq d$". This is the same as making $\mathbf{a} = \mathbf{n}$ and $b = d$ in our original definition. However, if $\mathbf{a}$ is not a unit vector, $b = d ||\mathbf{a}||$.
+%
+Here the half space can be defined as "all vectors $\mathbf{x}$, such that $\mathbf{x}^\top \frac{\mathbf{n}}{|| \mathbf{n} ||}  \leq d$". This is the same as making $\mathbf{a} = \mathbf{n}$ and $b = d ||\mathbf{a}||$.
  
 \end{flushleft}
 \end{frame}
@@ -106,7 +122,7 @@ Resulting region will be easily described as $\begin{bmatrix} \mathbf{a}_1^\top 
 
 
 \begin{frame}{Half-spaces}
-\framesubtitle{Formal description via inequalities}
+\framesubtitle{H-representation}
 \begin{flushleft}
 
 The last result allows us to write any convex polytope as a matrix inequality:
@@ -117,6 +133,49 @@ The last result allows us to write any convex polytope as a matrix inequality:
 \end{equation}
 
 And conversely, any matrix inequality \eqref{eq:ineq} represents either an empty set or a convex polytope.
+
+\bigskip
+
+\begin{definition}
+ $\mathbf{A} \mathbf{x} \leq  \mathbf{b}$ is called \emph{H-representation} of a polytope.
+\end{definition}
+ 
+\end{flushleft}
+\end{frame}
+
+
+
+\begin{frame}{V-representation}
+% \framesubtitle{}
+\begin{flushleft}
+
+Convex polytopes have alternative representations, such as \emph{V-representation}. In amounts to representing polytope as a set of its vertices.
+
+\begin{example}
+$V = \begin{bmatrix} -1 & -1 & 1 & 1 \\ -1 & 1 & 1 & -1 \end{bmatrix}$ is a V-representation of a square.
+\end{example}
+
+\begin{example}
+$\begin{bmatrix} 1 & 0 \\ 0 & 1 \\ -1 & 0 \\ 0 & -1 \end{bmatrix}
+\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \leq
+\begin{bmatrix} 1 \\ 1 \\ 1 \\ 1 \end{bmatrix}$
+is an H-representation of the same square.
+\end{example}
+ 
+\end{flushleft}
+\end{frame}
+
+
+
+\begin{frame}{H and V-representations}
+% \framesubtitle{}
+\begin{flushleft}
+
+Question: can we use V-representation for non-convex polytopes? What about H-representation?
+
+\bigskip
+
+Another note: to transfer from H-representation to V-representation, you need to solve \emph{vertex enumeration} problem, which is computationally expensive.
  
 \end{flushleft}
 \end{frame}
