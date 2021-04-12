@@ -56,6 +56,11 @@ jobs:
           working_directory: Slides/LMI_ConvexDomains/
 
 
+      - name: Compile LaTeX document Linear_Programming
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: main.tex
+          working_directory: Slides/Linear_Programming/
 
 
 
@@ -95,6 +100,11 @@ jobs:
           name: LMI_ConvexDomains.pdf
           path: Slides/LMI_ConvexDomains/main.pdf
 
+      - name: Save Linear_Programming artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: Linear_Programming.pdf
+          path: Slides/Linear_Programming/main.pdf
 
 
 
@@ -109,6 +119,8 @@ jobs:
           git add Slides/LeastSquares_QuadraticProgramming/main.pdf
           git add Slides/ConvexDomains/main.pdf
           git add Slides/LMI_ConvexDomains/main.pdf
+          git add Slides/Linear_Programming/main.pdf
+
 
           git commit -m "Update compiled PDFs"
           git push
