@@ -4,11 +4,11 @@
 * Lecture 3 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/ColumnLeftNullApplications
 * Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/LeastSquares_QuadraticProgramming
 * Lecture 5 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/ConvexDomains
-* Lecture 6 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/LeastSquares_QuadraticProgramming
+* Lecture 6 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/LMI_ConvexDomains
+* Lecture 7 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Programming
 
 # TBU Slides:
 * Lecture 8 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/QCQP_SOCP
-* Lecture 9 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Programming
 * Lecture 10 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/SDP
 * Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MICP
 * Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Dynamical_systems_with_constraints
@@ -19,6 +19,8 @@
 * Class 2: https://youtu.be/B25aDL0knIQ
 * Class 3: https://youtu.be/G3698D8lMk4
 * Class 4: https://youtu.be/sU9H3KIdl_Q
+* Class 5: https://youtu.be/m1VBodm9fyA
+
 
 # Last year's videos:
 * Lecture 1: [part 1](https://youtu.be/56ZVzQcCdQk), [part 2](https://youtu.be/VwmmfpipHTc)
