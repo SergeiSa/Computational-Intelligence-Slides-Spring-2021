@@ -21,6 +21,8 @@
 * Class 4: https://youtu.be/sU9H3KIdl_Q
 * Class 5: https://youtu.be/m1VBodm9fyA
 * Class 6 (practical session): https://youtu.be/JSt-6UBNyM4
+* Class 7: https://youtu.be/HaD7Swxh-mo
+* Class 8: (practical session) https://youtu.be/g_4F9BQrXnk
 
 
 # Last year's videos:
