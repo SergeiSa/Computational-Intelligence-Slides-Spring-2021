@@ -1,95 +1,13 @@
 \documentclass{beamer}
 
- \pdfmapfile{+sansmathaccent.map}
+\input{settings.tex}
 
 
-\mode<presentation>
-{
-  \usetheme{Warsaw} % or try Darmstadt, Madrid, Warsaw, Rochester, CambridgeUS, ...
-  \usecolortheme{crane} % or try seahorse, beaver, crane, wolverine, ...
-  \usefonttheme{serif}  % or try serif, structurebold, ...
-  \setbeamertemplate{navigation symbols}{}
-  \setbeamertemplate{caption}[numbered]
-} 
-
-\renewcommand{\familydefault}{\rmdefault}
-
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=blue,      
-    urlcolor=blue,
-}
-
-\usepackage{amsmath}
-\usepackage{mathtools}
-
-\DeclareMathOperator*{\argmin}{arg\,min}
-
-\usepackage{subcaption}
-
-\usepackage{tikz}
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\usepackage{listings}
-\usepackage{color}
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-
-\definecolor{cof}{RGB}{255,187,0}
-\definecolor{pur}{RGB}{205,137,0}
-\definecolor{greeo}{RGB}{91,173,69}
-\definecolor{greet}{RGB}{52,111,72}
-
-\usetikzlibrary{fadings}
-\usetikzlibrary{patterns}
-\usetikzlibrary{shadows.blur}
-\usetikzlibrary{shapes}
-
-\lstset{ 
-  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
-  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-  breaklines=true,                 % sets automatic line breaking
-  captionpos=b,                    % sets the caption-position to bottom
-  commentstyle=\color{mygreen},    % comment style
-  deletekeywords={...},            % if you want to delete keywords from the given language
-  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-  firstnumber=0000,                % start line enumeration with line 0000
-  frame=single,	                   % adds a frame around the code
-  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-  keywordstyle=\color{blue},       % keyword style
-  language=Octave,                 % the language of the code
-  morekeywords={*,...},            % if you want to add more keywords to the set
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-  numbersep=5pt,                   % how far the line-numbers are from the code
-  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-  showstringspaces=false,          % underline spaces within strings only
-  showtabs=false,                  % show tabs within strings adding particular underscores
-  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-  stringstyle=\color{mymauve},     % string literal style
-  tabsize=2,	                   % sets default tabsize to 2 spaces
-  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
-}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\title{Semidefinite Programming}
+\title{Semidefinite Programming, }
 \subtitle{Computational Intelligence, Lecture 10}
 \author{by Sergei Savin}
 \centering
-\date{Fall 2020}
+\date{Spring 2021}
 
 
 
@@ -219,7 +137,7 @@ where cost and constraints should adhere to SDP limitations.
 
 
 
-\begin{frame}{Example 1: Continuous Lyapunov equation as an SDP/LMI}
+\begin{frame}{Ex. 1: Continuous Lyapunov eq. as SDP/LMI}
 \framesubtitle{Mathematical formulation}
 \begin{flushleft}
 
@@ -254,7 +172,7 @@ where decision variable is $\mathbf{P}$. This can be represented as an SDP:
 
 
 
-\begin{frame}{Example 1: Continuous Lyapunov equation as an SDP/LMI}
+\begin{frame}{Ex. 1: Continuous Lyapunov eq. as SDP/LMI}
 \framesubtitle{Code}
 \begin{flushleft}
 
@@ -266,7 +184,7 @@ where decision variable is $\mathbf{P}$. This can be represented as an SDP:
 
 
 
-\begin{frame}{Example 2: Discrete Lyapunov equation as an SDP/LMI}
+\begin{frame}{Ex. 2: Discrete Lyapunov eq. as SDP/LMI}
 \framesubtitle{Mathematical formulation}
 \begin{flushleft}
 
@@ -300,7 +218,7 @@ where decision variable is $\mathbf{P}$. This can be represented as an SDP:
 
 
 
-\begin{frame}{Example 2: Discrete Lyapunov equation as an SDP/LMI}
+\begin{frame}{Ex. 2: Discrete Lyapunov eq. as SDP/LMI}
 \framesubtitle{Code}
 \begin{flushleft}
 
@@ -313,7 +231,7 @@ where decision variable is $\mathbf{P}$. This can be represented as an SDP:
 
 
 
-\begin{frame}{Example 3: LMI Controller design for continuous LTI}
+\begin{frame}{Ex. 3: FTS for continuous LTI}
 \framesubtitle{Mathematical formulation}
 \begin{flushleft}
 
@@ -343,8 +261,8 @@ This gives as a direct way to calculate linear feedback controller $\mathbf{u} =
 
 
 
-\begin{frame}{Example 3: LMI Controller design for continuous LTI}
-\framesubtitle{Code}
+\begin{frame}{Ex. 3: FTS for continuous LTI, Code}
+% \framesubtitle{Code}
 \begin{flushleft}
 
 \input{code3}
@@ -353,6 +271,107 @@ This gives as a direct way to calculate linear feedback controller $\mathbf{u} =
 \end{frame}
 
 
+
+
+
+
+\begin{frame}{How to describe an ellipsoid}
+\framesubtitle{Unit sphere transformation}
+\begin{flushleft}
+
+Let us first remember how we describe a unit sphere:
+
+\begin{equation}
+    \mathcal{S} = \{ \mathbf{x}: \ || \mathbf{x} || \leq 1 \}
+\end{equation}
+
+An ellipsoid can be seen as a linear transformation of a unit sphere: 
+
+\begin{equation}
+    \mathcal{E} = \{ \mathbf{A}\mathbf{x} + \mathbf{b}: \ || \mathbf{x} || \leq 1 \}
+\end{equation}
+ 
+\end{flushleft}
+\end{frame}
+
+
+\begin{frame}{How to describe an ellipsoid}
+\framesubtitle{A dual description}
+\begin{flushleft}
+
+Let us introduce a change of variables $\mathbf{z} = \mathbf{A}\mathbf{x} + \mathbf{b}$. Assuming $\mathbf{A}$ is invertible, we get:
+
+\begin{equation}
+    \mathbf{x} = \mathbf{A}^{-1}(\mathbf{z} - \mathbf{b})
+\end{equation}
+
+So, we can describe the exact same ellipsoid using an alternative formula: 
+
+\begin{equation}
+    \mathcal{E} = \{ \mathbf{z}: \ || \mathbf{B}\mathbf{z} + \mathbf{c} || \leq 1 \}
+\end{equation}
+ 
+ where $\mathbf{B} = \mathbf{A}^{-1}$ and $\mathbf{c} = -\mathbf{A}^{-1}\mathbf{b}$.
+ 
+\end{flushleft}
+\end{frame}
+
+
+
+\begin{frame}{Volume of an ellipsoid}
+\framesubtitle{Part 1}
+\begin{flushleft}
+
+For an ellipsoid of the form
+
+\begin{equation}
+    \mathcal{E} = \{ \mathbf{A}\mathbf{x} + \mathbf{b}: \ || \mathbf{x} || \leq 1 \}
+\end{equation}
+
+the "bigger" the $\mathbf{A}$, the bigger the ellipsoid. This concept can be made concrete by talking about the determinant of $\mathbf{A}$.
+
+\bigskip
+
+Thus, maximizing the volume of this ellipsoid is the same as maximizing $\text{det}(\mathbf{A})$. Or, it is the same as \emph{minimizing} the $\text{det}(\mathbf{A}^{-1})$, since $\text{det}(\mathbf{A}^{-1}) = 1 / \text{det}(\mathbf{A})$.
+ 
+\end{flushleft}
+\end{frame}
+
+
+
+
+\begin{frame}{Volume of an ellipsoid}
+\framesubtitle{Part 2}
+\begin{flushleft}
+
+For an ellipsoid of the form
+
+\begin{equation}
+    \mathcal{E} = \{ \mathbf{z}: \ || \mathbf{B}\mathbf{z} + \mathbf{c} || \leq 1 \}
+\end{equation}
+
+the "bigger" the $\mathbf{B}$, the \emph{smaller} the ellipsoid. We can make it obvious by thinking that increasing $\mathbf{B}$ leaves less room for valid $\mathbf{z}$, and it is the volume of valid $\mathbf{z}$ that makes the volume of the ellipsoid in this case.
+
+\bigskip
+
+This concept can be made concrete by talking about the determinant of $\mathbf{B}$. Thus, maximizing the volume of this ellipsoid is the same as \emph{minimizing} $\text{det}(\mathbf{B})$. Or, it is the same as \emph{maximizing} the $\text{det}(\mathbf{B}^{-1})$.
+ 
+\end{flushleft}
+\end{frame}
+
+
+
+\begin{frame}{Inscribed ellipsoid algorithms}
+\begin{flushleft}
+
+Continue with slides from Convex Optimization — Boyd \& Vandenberghe. Follow the link:
+
+\bigskip
+
+\centerline{\href{https://see.stanford.edu/materials/lsocoee364a/08GeometricalProbs.pdf}{8. Geometric problems}}
+
+\end{flushleft}
+\end{frame}
 
 
 
@@ -368,16 +387,23 @@ Implement both examples from page 2 of the \href{http://stanford.edu/class/ee363
 
 
 
+
+
 \begin{frame}
 \centerline{Lecture slides are available via Moodle.}
 \bigskip
 \centerline{You can help improve these slides at:}
-
-\centerline{\href{https://github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2020}{github.com/SergeiSa/Computational-Intelligence-Slides-Fall-2020}}
-
-
+\centerline{
+\textcolor{blue}{\href{https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021}{github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021}}
+}
 \bigskip
+
+\textcolor{black}{\qrcode[height=1.5in]{https://git.io/JYRBT}}
+\bigskip
+
 \centerline{Check Moodle for additional links, videos, textbook suggestions.}
 \end{frame}
+
+
 
 \end{document}
