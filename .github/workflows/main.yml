@@ -63,6 +63,20 @@ jobs:
           working_directory: Slides/Linear_Programming/
 
 
+      - name: Compile LaTeX document QCQP_SOCP
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: main.tex
+          working_directory: Slides/QCQP_SOCP/
+
+
+      - name: Compile LaTeX document SDP
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: main.tex
+          working_directory: Slides/SDP/
+
+
 
       - name: Save Introduction artifact
         uses: actions/upload-artifact@v1
@@ -106,6 +120,18 @@ jobs:
           name: Linear_Programming.pdf
           path: Slides/Linear_Programming/main.pdf
 
+      - name: Save QCQP_SOCP artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: QCQP_SOCP.pdf
+          path: Slides/QCQP_SOCP/main.pdf
+
+      - name: Save SDP artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: SDP.pdf
+          path: Slides/SDP/main.pdf
+
 
 
       - name: Update compiled PDFs in git repository
@@ -120,6 +146,8 @@ jobs:
           git add Slides/ConvexDomains/main.pdf
           git add Slides/LMI_ConvexDomains/main.pdf
           git add Slides/Linear_Programming/main.pdf
+          git add Slides/QCQP_SOCP/main.pdf
+          git add Slides/SDP/main.pdf
 
 
           git commit -m "Update compiled PDFs"
