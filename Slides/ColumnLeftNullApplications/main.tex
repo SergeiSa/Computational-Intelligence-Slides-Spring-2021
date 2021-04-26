@@ -265,10 +265,10 @@ Finding null space basis $\bo{N} = \text{null}(\begin{bmatrix} (\bo{A} - \bo{B}\
 Now that we have such powerful tools, we can solve difficult problems easily. Consider this one. Linear time-invariant (LTI) dynamical system is described as:
 
 \begin{equation}
-    \dot{\mathbf{x}} = \mathbf{A} \mathbf{x} + \mathbf{B}_1 \mathbf{u}_1 + \mathbf{B}_2 \mathbf{u}_2
+    \dot{\bo{x}} = \bo{A} \bo{x} + \bo{B}_1 \bo{u}_1 + \bo{B}_2 \bo{u}_2
 \end{equation}
 
-Find such control inputs $\mathbf{u}^*_1$, $\mathbf{u}^*_2$ that state $\mathbf{x}^*$ becomes a fixed point. Additionally, assume that $\mathbf{u}^*_1$ is free to use, while $\mathbf{u}^*_2$ should be used as sparingly as possible.
+Find such control inputs $\bo{u}^*_1$, $\bo{u}^*_2$ that state $\bo{x}^*$ becomes a fixed point. Additionally, assume that $\bo{u}^*_1$ is free to use, while $\bo{u}^*_2$ should be used as sparingly as possible.
 
 \bigskip
 
@@ -277,10 +277,10 @@ This can be formulated in the language of optimization as follows:
 \begin{equation}
 \label{eq:task_u1u2}
 \begin{aligned}
-& \underset{\mathbf{u}_1, \mathbf{u}_2}{\text{minimize}}
-& & || \mathbf{u}_2 ||, \\
+& \underset{\bo{u}_1, \bo{u}_2}{\text{minimize}}
+& & || \bo{u}_2 ||, \\
 & \text{subject to}
-& & \mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}_1 + \mathbf{B}_2 \mathbf{u}_2 = \mathbf{0}
+& & \bo{A} \bo{x}^* + \bo{B}_1 \bo{u}_1 + \bo{B}_2 \bo{u}_2 = \bo{0}
 \end{aligned}
 \end{equation}
 
@@ -292,16 +292,16 @@ This can be formulated in the language of optimization as follows:
 \framesubtitle{part 2}
 \begin{flushleft}
 
-To check that the problem has at least one solution, we need to make sure that there are such inputs $\mathbf{u}^*_1$, $\mathbf{u}^*_2$ that state $\mathbf{x}^*$ becomes a fixed point. In other words, vector $\mathbf{A}\mathbf{x}^*$ should lie in the span of the columns of the matrix $[\mathbf{B}_1 \ \mathbf{B}_2]$. Which is the same as saying that its projection on the left null space of $[\mathbf{B}_1 \ \mathbf{B}_2]$ is zero:
+To check that the problem has at least one solution, we need to make sure that there are such inputs $\bo{u}^*_1$, $\bo{u}^*_2$ that state $\bo{x}^*$ becomes a fixed point. In other words, vector $\bo{A}\bo{x}^*$ should lie in the span of the columns of the matrix $[\bo{B}_1 \ \bo{B}_2]$. Which is the same as saying that its projection on the left null space of $[\bo{B}_1 \ \bo{B}_2]$ is zero:
 
 \begin{equation}
-    (\mathbf{I} - [\mathbf{B}_1 \ \mathbf{B}_2] [\mathbf{B}_1 \ \mathbf{B}_2]^+) \mathbf{A}\mathbf{x}^* = \mathbf{0}
+    (\bo{I} - [\bo{B}_1 \ \bo{B}_2] [\bo{B}_1 \ \bo{B}_2]^+) \bo{A}\bo{x}^* = \bo{0}
 \end{equation}
 
-All solutions of the eq. $\mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}_1 + \mathbf{B}_2 \mathbf{u}_2 = \mathbf{0}$ can be found as:
+All solutions of the eq. $\bo{A} \bo{x}^* + \bo{B}_1 \bo{u}_1 + \bo{B}_2 \bo{u}_2 = \bo{0}$ can be found as:
 
 \begin{equation}
-    \mathbf{u} = - [\mathbf{B}_1 \ \mathbf{B}_2]^+ \mathbf{A}\mathbf{x}^* + \text{null}([\mathbf{B}_1 \ \mathbf{B}_2])\mathbf{z}, \ \forall \mathbf{z}
+    \bo{u} = - [\bo{B}_1 \ \bo{B}_2]^+ \bo{A}\bo{x}^* + \text{null}([\bo{B}_1 \ \bo{B}_2])\bo{z}, \ \forall \bo{z}
 \end{equation}
 
 \end{flushleft}
@@ -313,72 +313,63 @@ All solutions of the eq. $\mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}_1 + 
 \framesubtitle{part 3}
 \begin{flushleft}
 
-Now we need to pick the solution that minimizes $\mathbf{u}_2$. We can solve it as an optimization (by thinking about the derivatives of the objective/cost function), but it can also be solved as a projection.
+Now we need to pick the solution that minimizes $\bo{u}_2$. Let us define:
+%
+\begin{align*}
+    & \bo{P} = \bo{B}_1 \bo{B}^+_1 & \\
+    & \bo{P} \bo{B}_2 \bo{u}^*_2 = \bo{a}^{||} & (\bo{I} - \bo{P}) \bo{B}_2 \bo{u}^*_2 = \bo{a}^\perp
+\end{align*}
 
-\bigskip
-
-Let us define projector $\mathbf{P} = \mathbf{B}_1 \mathbf{B}^+_1$. \textcolor{mydarkgreen}{We can prove that $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$}. Assume $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{a}$, then $\mathbf{u}^*_2 =  \mathbf{u}^0_2 + \mathbf{u}^a_2$, where $\mathbf{u}^0_2$ is in the null space of $\mathbf{P} \mathbf{B}_2$ and $\mathbf{u}^a_2$ is in the row space of $\mathbf{P} \mathbf{B}_2$, or equivalently $\mathbf{P} \mathbf{B}_2 \mathbf{u}^0_2 = \mathbf{0}$ and $\mathbf{P} \mathbf{B}_2 \mathbf{u}^a_2 = \mathbf{a}$. This gives us solution:
-
-\begin{equation}
-    \mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}^*_1 + \mathbf{B}_2 \mathbf{u}^0_2 + \mathbf{B}_2 \mathbf{u}^a_2 = \mathbf{0}
-\end{equation}
+Hence $\bo{B}_2 \bo{u}^*_2 = \bo{a}^{||} + \bo{a}^\perp$, and therefore $\bo{A} \bo{x}^* + \bo{B}_1 \bo{u}^*_1 + \bo{a}^{||} + \bo{a}^\perp = 0$ and $\bo{P} \bo{B}_1 = \bo{B}_1$. Multiply dynamics by $\bo{P}$:
+%
+\begin{align*}
+    \bo{P}\bo{A} \bo{x}^* + \bo{P}\bo{B}_1 \bo{u}^*_1 + \bo{P}\bo{a}^{||} + \bo{P}\bo{a}^\perp = 0 \\
+    \bo{P}\bo{A} \bo{x}^* + \bo{B}_1 \bo{u}^*_1 + \bo{a}^{||} = 0
+\end{align*}
+%
+Let us notice that $\bo{a}^{||} \in \col{\bo{B}_1}$, and therefore the same result will be achieved in the following two cases:
+%
+\begin{align*}
+    1) \ & \bo{B}_2 \bo{u}^*_2 = \bo{a}^{||} + \bo{a}^\perp & 
+    \bo{B}_1 \bo{u}^*_1 = \bo{B}_1 \bo{u}_1^0 \\
+    2) \ & \bo{B}_2 \bo{u}^*_2 = \bo{a}^\perp & 
+    \bo{B}_1 \bo{u}^*_1 = \bo{B}_1 \bo{u}_1^0 + \bo{a}^{||}
+\end{align*}
 
 \end{flushleft}
 \end{frame}
+
+
 
 
 \begin{frame}{Minimize one of the control inputs}
 \framesubtitle{part 4}
 \begin{flushleft}
 
-But since $\mathbf{a} \in \text{span}(\mathbf{B}_1) = \text{span}(\mathbf{P})$ we can also provide an alternative solution:
-
+Since $\bo{B}_2^+ (\bo{a}^{||} + \bo{a}^\perp)$ is larger or equal to than $\bo{B}_2^+ \bo{a}^\perp$, it means that solution that minimizes $\bo{u}_2$ is:
+%
 \begin{equation}
-    \mathbf{A} \mathbf{x}^* + \mathbf{B}_1 \mathbf{u}^a_1 + \mathbf{B}_2 \mathbf{u}^0_2 = \mathbf{0}
+    \bo{u}_2^* = \bo{B}_2^+ \bo{a}^\perp
 \end{equation}
 %
-where $\mathbf{u}^a_1 = \mathbf{u}^*_1 + \mathbf{B}^+_1 \mathbf{a}$.
-
-\bigskip
-
-Since $\mathbf{u}^0_2$ and $\mathbf{u}^a_2$ belong to orthogonal subspaces, $||\mathbf{u}^0_2 + \mathbf{u}^a_2|| \geq ||\mathbf{u}^0_2||$. Therefore the alternative solution provides a smaller norm value for $\mathbf{u}_2$, hence $\mathbf{u}^a_2 = \mathbf{0}$ and $\mathbf{a} = \mathbf{0}$ and $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$.
-
-\bigskip
-
-Since $\mathbf{P} \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}$ and $\mathbf{P} \mathbf{B}_1 = \mathbf{B}_1$ we can observe that $(\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{B}_2\mathbf{u}^*_2$ and $(\mathbf{I} - \mathbf{P}) \mathbf{B}_1 = \mathbf{0}$.
-
-
-\end{flushleft}
-\end{frame}
-
-
-
-
-\begin{frame}{Minimize one of the control inputs}
-\framesubtitle{part 5}
-\begin{flushleft}
-
- Multiplying our constraint by $(\mathbf{I} - \mathbf{P})$ we attain:
-
+Now that we know that $\bo{B}_2 \bo{u}_2^* \in \nulls{\bo{B}_1^\top}$ (in the left null space of $\bo{B}_1$), we can project dynamics to that space:
+%
+\begin{align*}
+    (\bo{I} - \bo{P})\bo{A} \bo{x}^* + (\bo{I} - \bo{P})\bo{B}_1 \bo{u}_1^* + (\bo{I} - \bo{P})\bo{B}_2 \bo{u}_2^* = \bo{0} \\
+    (\bo{I} - \bo{P})\bo{A} \bo{x}^* + (\bo{I} - \bo{P})\bo{B}_2 \bo{u}_2^* = \bo{0}
+\end{align*}
+%
+Thus:
 \begin{equation}
-\label{eq:projected}
-    (\mathbf{I} - \mathbf{P}) \mathbf{A} \mathbf{x}^* + (\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{0}
+    \bo{u}_2^* = -((\bo{I} - \bo{P})\bo{B}_2)^+ (\bo{I} - \bo{P})\bo{A} \bo{x}^*
 \end{equation}
-
-Since $(\mathbf{I} - \mathbf{P}) \mathbf{B}_2 \mathbf{u}^*_2 = \mathbf{B}_2\mathbf{u}^*_2$, as a constraint on $\mathbf{u}^*_2$ equation \eqref{eq:projected} is equivalent to \eqref{eq:task_u1u2}. Eq. \eqref{eq:projected} has exact solution:
-
-\begin{equation}
-\label{Solution_u2}
-     \mathbf{u}^*_2 = -((\mathbf{I} - \mathbf{P}) \mathbf{B}_2)^+(\mathbf{I} - \mathbf{P}) \mathbf{A} \mathbf{x}^*
-\end{equation}
-
-Which is the solution to the original problem; $\mathbf{u}^*_1$ can be obtained as follows:
-
+%
+Which is the solution to the original problem; $\bo{u}^*_1$ can be obtained as follows:
+%
 \begin{equation}
 \label{Solution_u1}
-      \mathbf{u}^*_1  = -\mathbf{B}^+_1(\mathbf{A} \mathbf{x}^* + \mathbf{B}_2 \mathbf{u}^*_2)
+      \bo{u}^*_1  = -\bo{B}^+_1(\bo{A} \bo{x}^* + \bo{B}_2 \bo{u}^*_2)
 \end{equation}
-
 
 \end{flushleft}
 \end{frame}
