@@ -55,13 +55,11 @@ jobs:
           root_file: main.tex
           working_directory: Slides/LMI_ConvexDomains/
 
-
       - name: Compile LaTeX document Linear_Programming
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/Linear_Programming/
-
 
       - name: Compile LaTeX document QCQP_SOCP
         uses: xu-cheng/latex-action@master
@@ -69,12 +67,19 @@ jobs:
           root_file: main.tex
           working_directory: Slides/QCQP_SOCP/
 
-
       - name: Compile LaTeX document SDP
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
           working_directory: Slides/SDP/
+
+      - name: Compile LaTeX document BarrierFunctions
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: main.tex
+          working_directory: Slides/BarrierFunctions/
+
+
 
 
 
@@ -132,6 +137,15 @@ jobs:
           name: SDP.pdf
           path: Slides/SDP/main.pdf
 
+      - name: Save BarrierFunctions artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: BarrierFunctions.pdf
+          path: Slides/BarrierFunctions/main.pdf
+
+
+
+
 
 
       - name: Update compiled PDFs in git repository
@@ -148,6 +162,7 @@ jobs:
           git add Slides/Linear_Programming/main.pdf
           git add Slides/QCQP_SOCP/main.pdf
           git add Slides/SDP/main.pdf
+          git add Slides/BarrierFunctions/main.pdf
 
 
           git commit -m "Update compiled PDFs"
