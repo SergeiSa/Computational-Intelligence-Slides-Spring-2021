@@ -26,7 +26,7 @@
 * Class 9: https://youtu.be/4F_ycUf1lRk
 * Class 10: https://youtu.be/EPUGBSHsSLc
 * Class 11: https://youtu.be/7Dwa_7PfqJA
-* Class (MICP): https://youtu.be/LR-2dCqfixI
+* Class (MICP): https://youtu.be/GtSi2I-iRLI
 * Class (Minimax): https://youtu.be/KFOa_HzwreY
 
 
