@@ -355,6 +355,137 @@ Try solving this problem on your own:
 \end{flushleft}
 \end{frame}
 
+% ADDED BONUS SOLUTION:
+
+\begin{frame}{MiniMax: Quadratic constraint, type 4: SOLUTION: Part 1}
+% \framesubtitle{Part 2}
+\begin{flushleft}
+
+In order to solve this problem, we will make it similar to the problems that we have solved before. We will start by introducing $\bo{v}$, wehre $ \bo{v} = \bo{H}\bo{y} + \bo{f}$; hence, $ \bo{y} = \bo{H}^{-1}\bo{v} -\bo{H}^{-1}\bo{f}$. So the problem now will be.
+
+%
+\begin{equation}
+\begin{aligned}
+& \underset{\bo{x}}{\text{min}} \ \underset{\bo{y}}{\text{max}}
+& & ||\bo{x} - \bo{x}^*||, \\
+& \text{subject to}
+& & (\bo{H}^{-1}\bo{v} -\bo{H}^{-1}\bo{f} - \bo{a})^\top \bo{D} (\bo{x} - \bo{b})  +
+\bo{s}^\top (\bo{H}^{-1}\bo{v} -\bo{H}^{-1}\bo{f}) \\ & & & + \bo{q}^\top \bo{x} \leq h, \\
+& & & ||\bo{v}|| \leq p
+\end{aligned}
+\end{equation}
+ 
+\end{flushleft}
+\end{frame}
+
+
+\begin{frame}{MiniMax: Quadratic constraint, type 4: SOLUTION: Part 2}
+% \framesubtitle{Part 2}
+\begin{flushleft}
+
+Modifying the first constraint equation as follows:
+
+%
+\begin{equation}
+\begin{aligned}
+\bo{v}^\top\bo{H}^{-\top}\bo{D} (\bo{x} - \bo{b}) -\bo{f}^\top\bo{H}^{-\top}\bo{D} (\bo{x} - \bo{b}) - \bo{a}^\top\bo{D} (\bo{x} - \bo{b}) \\ +
+\bo{s}^\top\bo{H}^{-1}\bo{v} -\bo{s}^\top\bo{H}^{-1}\bo{f}  + \bo{q}^\top \bo{x} \leq h
+\end{aligned}
+\end{equation}
+ 
+ The goal is to take $\bo{v}$ as a common factor in order to be able to find the worst case scenario.\\
+ It can be seen that $\bo{s}^\top\bo{H}^{-1}\bo{v}$ is a scaler, so the transposing this part will not change its value.
+ 
+ \begin{equation}
+\begin{aligned}
+\bo{v}^\top\bo{H}^{-\top}\bo{D} (\bo{x} - \bo{b}) -\bo{f}^\top\bo{H}^{-\top}\bo{D} (\bo{x} - \bo{b}) - \bo{a}^\top\bo{D} (\bo{x} - \bo{b}) \\ +
+\bo{v}^\top\bo{H}^{-\top}\bo{s} -\bo{s}^\top\bo{H}^{-1}\bo{f}  + \bo{q}^\top \bo{x} \leq h
+\end{aligned}
+\end{equation}
+ Now $\bo{v}^\top$ can be taken as a common factor
+\end{flushleft}
+\end{frame}
+
+
+
+
+\begin{frame}{MiniMax: Quadratic constraint, type 4: SOLUTION: Part 3}
+% \framesubtitle{Part 2}
+\begin{flushleft}
+
+%
+\begin{equation}
+\begin{aligned}
+\bo{v}^\top\bo{H}^{-\top}(\bo{D} (\bo{x} - \bo{b}) + \bo{s}) - (\bo{H}^{-1}\bo{f} + \bo{a})^\top\bo{D} (\bo{x} - \bo{b})\\
+-\bo{s}^\top\bo{H}^{-1}\bo{f}  + \bo{q}^\top \bo{x} \leq h
+\end{aligned}
+\end{equation}
+ To make things clear, lets simplify long expressions with new variables:
+
+\begin{align}
+& \bo{g} = \bo{H}^{-\top}(\bo{D} (\bo{x} - \bo{b}) + \bo{s}) \\
+& k = (\bo{H}^{-1}\bo{f} + \bo{a})^\top\bo{D} (\bo{x} - \bo{b})
+-\bo{s}^\top\bo{H}^{-1}\bo{f}  + \bo{q}^\top \bo{x}
+\end{align}
+
+So the problem now becomes:
+\begin{equation}
+\begin{aligned}
+& \underset{\bo{x}}{\text{min}} \ \underset{\bo{y}}{\text{max}}
+& & ||\bo{x} - \bo{x}^*||, \\
+& \text{subject to}
+& & \bo{v}^\top\bo{g} - k \leq h, \\
+& & & ||\bo{v}|| \leq p
+\end{aligned}
+\end{equation}
+
+\end{flushleft}
+\end{frame}
+
+
+
+\begin{frame}{MiniMax: Quadratic constraint, type 4: SOLUTION: Part 4}
+% \framesubtitle{Part 2}
+\begin{flushleft}
+
+%
+The worst case scenario happens when $\bo{v}$ becomes aligned with $\bo{g}$ and reaches its maximum possible length $p$. So it's possible to merge the two constraints into one constraint and turn the "min-max" problem into an only "min" problem as follows:
+
+\begin{align}
+\bo{v} = \frac{\bo{g}}{||\bo{g}||}p
+\end{align}
+
+Now substituting back into the constraint:
+\begin{align}
+\frac{\bo{g}^\top\bo{g}}{||\bo{g}||}p - k \leq h \\
+||\bo{g}||p - k \leq h\\
+||\bo{g}||\leq \frac{h}{p} + \frac{k}{p}
+\end{align}
+
+\end{flushleft}
+\end{frame}
+
+
+
+\begin{frame}{MiniMax: Quadratic constraint, type 4: SOLUTION: Part 5}
+% \framesubtitle{Part 2}
+\begin{flushleft}
+
+%
+\begin{equation}
+\begin{aligned}
+& \underset{\bo{x}}{\text{min}} \
+& & ||\bo{x} - \bo{x}^*||, \\
+& \text{subject to}
+& & ||\bo{g}||\leq \frac{h}{p} + \frac{k}{p}
+\end{aligned}
+\end{equation}
+
+As it can be seen, expression (36) is similar to expression (13). Because $\bo{g}$ contains the variable to be minimized $\bo{x}$. And that is an SOCP constraint.
+
+\end{flushleft}
+\end{frame}
+
 
 
 
