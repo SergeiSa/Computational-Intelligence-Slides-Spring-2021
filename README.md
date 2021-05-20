@@ -8,6 +8,8 @@
 * Lecture 7 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Programming
 * Lecture 8 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/QCQP_SOCP
 * Lecture 9 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/SDP
+* Lecture 10 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MICP
+* Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/BarrierFunctions
 
 # TBU Slides:
 * Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MICP
