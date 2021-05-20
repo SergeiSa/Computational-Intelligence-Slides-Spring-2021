@@ -91,6 +91,12 @@ jobs:
           root_file: main.tex
           working_directory: Slides/MICP/
 
+      - name: Compile LaTeX document MiniMax
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: main.tex
+          working_directory: Slides/MiniMax/
+
 
 
 
@@ -166,7 +172,11 @@ jobs:
           name: MICP.pdf
           path: Slides/MICP/main.pdf
 
-
+      - name: Save MiniMax artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: MiniMax.pdf
+          path: Slides/MiniMax/main.pdf
 
 
 
@@ -188,6 +198,7 @@ jobs:
           git add Slides/SDP/main.pdf
           git add Slides/BarrierFunctions/main.pdf
           git add Slides/MICP/main.pdf
+          git add Slides/MiniMax/main.pdf
 
 
 
