@@ -10,10 +10,7 @@
 * Lecture 9 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/SDP
 * Lecture 10 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MICP
 * Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/BarrierFunctions
-
-# TBU Slides:
-* Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MICP
-* Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Dynamical_systems_with_constraints
+* Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MiniMax
 
 
 # Lecture videos:
