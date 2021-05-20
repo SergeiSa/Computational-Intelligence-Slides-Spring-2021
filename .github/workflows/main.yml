@@ -104,7 +104,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: Syllabus.pdf
-          path: Slides/Syllabus/main.pdf
+          path: Syllabus/main.pdf
 
       - name: Save Introduction artifact
         uses: actions/upload-artifact@v1
