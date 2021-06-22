@@ -59,6 +59,9 @@
     - [Footstep Planning on Uneven Terrain with Mixed-Integer Convex
 Optimization](https://groups.csail.mit.edu/robotics-center/public_papers/Deits14a.pdf)
 
+* LMI in Control:
+    - Continious feedback design (+examples of dual problems) MAE598 (LMIs in Control) - https://youtu.be/iI3zRAjuG_U
+    - Discrete feedback design (+examples of dual problems and Schur complement) MAE598 (LMIs in Control) - https://youtu.be/oqXvkgSN-Zc
 
 # For contributors:
 
