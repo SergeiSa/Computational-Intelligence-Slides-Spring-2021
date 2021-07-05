@@ -63,6 +63,7 @@ Optimization](https://groups.csail.mit.edu/robotics-center/public_papers/Deits14
     - Continious feedback design (+examples of dual problems) MAE598 (LMIs in Control) - https://youtu.be/iI3zRAjuG_U
     - Discrete feedback design (+examples of dual problems and Schur complement) MAE598 (LMIs in Control) - https://youtu.be/oqXvkgSN-Zc
     - Luenberger Observer design MAE598 (LMIs in Control) - https://youtu.be/eSY8Fwp2dQo
+    - Kalman Filters MAE598 (LMIs in Control) - https://youtu.be/Ahzg-Tj7aEU
 
 * Schur complement - https://www.cis.upenn.edu/~jean/schur-comp.pdf
 
