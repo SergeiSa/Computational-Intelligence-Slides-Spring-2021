@@ -47,9 +47,9 @@
 # Reference material
 
 ## Textbooks:
-* Boyd, S., Boyd, S.P. and Vandenberghe, L., 2004. Convex optimization. Cambridge university press. https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf
-* Kevin M.. Lynch and Park, F.C., 2017. Modern Robotics: Mechanics, Planning, and Control. Cambridge University Press. http://hades.mech.northwestern.edu/images/7/7f/MR.pdf
-* Siciliano, B., Sciavicco L. Villani L. & Oriolo G.,(2009) Robotic–Modelling, Planning and Control. https://www.academia.edu/23785978/B_Sicilliano_Robotics_Modelling_Planning_and_Control
+* [Boyd, S., Boyd, S.P. and Vandenberghe, L., 2004. Convex optimization. Cambridge university press](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)
+* [Kevin M.. Lynch and Park, F.C., 2017. Modern Robotics: Mechanics, Planning, and Control. Cambridge University Press](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf)
+* [Siciliano, B., Sciavicco L. Villani L. & Oriolo G.,(2009) Robotic–Modelling, Planning and Control](https://www.academia.edu/23785978/B_Sicilliano_Robotics_Modelling_Planning_and_Control)
 
 ## References for lectures:
 * Lecture 2, 3: 
@@ -61,12 +61,12 @@
 Optimization](https://groups.csail.mit.edu/robotics-center/public_papers/Deits14a.pdf)
 
 * LMI in Control:
-    - Continious feedback design (+examples of dual problems) MAE598 (LMIs in Control) - https://youtu.be/iI3zRAjuG_U
-    - Discrete feedback design (+examples of dual problems and Schur complement) MAE598 (LMIs in Control) - https://youtu.be/oqXvkgSN-Zc
-    - Luenberger Observer design MAE598 (LMIs in Control) - https://youtu.be/eSY8Fwp2dQo
-    - Kalman Filters MAE598 (LMIs in Control) - https://youtu.be/Ahzg-Tj7aEU
+    - [Continious feedback design (+examples of dual problems) MAE598 (LMIs in Control)](https://youtu.be/iI3zRAjuG_U)
+    - [Discrete feedback design (+examples of dual problems and Schur complement) MAE598 (LMIs in Control)](https://youtu.be/oqXvkgSN-Zc)
+    - [Luenberger Observer design MAE598 (LMIs in Control)](https://youtu.be/eSY8Fwp2dQo)
+    - [Kalman Filters MAE598 (LMIs in Control)](https://youtu.be/Ahzg-Tj7aEU)
 
-* Schur complement - https://www.cis.upenn.edu/~jean/schur-comp.pdf
+* [Schur complement](https://www.cis.upenn.edu/~jean/schur-comp.pdf)
 
 # For contributors:
 
