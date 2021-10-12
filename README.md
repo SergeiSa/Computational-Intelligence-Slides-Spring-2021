@@ -13,20 +13,21 @@
 * [Lecture 12](./Slides/MiniMax/main.pdf)
 
 
-# Lecture videos:
-* Class 1: https://youtu.be/YB-Pm6dPR7s
-* Class 2: https://youtu.be/B25aDL0knIQ
-* Class 3: https://youtu.be/G3698D8lMk4
-* Class 4: https://youtu.be/sU9H3KIdl_Q
-* Class 5: https://youtu.be/m1VBodm9fyA
-* Class 6 (practical session): https://youtu.be/JSt-6UBNyM4
-* Class 7: https://youtu.be/HaD7Swxh-mo
-* Class 8: (practical session) https://youtu.be/g_4F9BQrXnk
-* Class 9: https://youtu.be/4F_ycUf1lRk
-* Class 10: https://youtu.be/EPUGBSHsSLc
-* Class 11: https://youtu.be/7Dwa_7PfqJA
-* Class (MICP): https://youtu.be/GtSi2I-iRLI
-* Class (Minimax): https://youtu.be/KFOa_HzwreY
+# Videos:
+* [**Full playlist**](https://youtube.com/playlist?list=PLlxR_sEKjSpQpIgRykNdcwITKqXl3Gu-K)
+* [Class 1](https://youtu.be/YB-Pm6dPR7s)
+* [Class 2](https://youtu.be/B25aDL0knIQ)
+* [Class 3](https://youtu.be/G3698D8lMk4)
+* [Class 4](https://youtu.be/sU9H3KIdl_Q)
+* [Class 5](https://youtu.be/m1VBodm9fyA)
+* [Class 6 (practical session)](https://youtu.be/JSt-6UBNyM4)
+* [Class 7 ](https://youtu.be/HaD7Swxh-mo)
+* [Class 8 (practical session)](https://youtu.be/g_4F9BQrXnk)
+* [Class 9 ](https://youtu.be/4F_ycUf1lRk)
+* [Class 10](https://youtu.be/EPUGBSHsSLc)
+* [Class 11](https://youtu.be/7Dwa_7PfqJA)
+* [Class (MICP)](https://youtu.be/GtSi2I-iRLI)
+* [Class (Minimax)](https://youtu.be/KFOa_HzwreY)
 
 
 # Last year's videos:
