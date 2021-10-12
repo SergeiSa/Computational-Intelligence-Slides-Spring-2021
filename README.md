@@ -1,16 +1,16 @@
 # Slides:
-* Lecture 1 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Introduction
-* Lecture 2 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/NullRowProjector
-* Lecture 3 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/ColumnLeftNullApplications
-* Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/LeastSquares_QuadraticProgramming
-* Lecture 5 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/ConvexDomains
-* Lecture 6 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/LMI_ConvexDomains
-* Lecture 7 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Programming
-* Lecture 8 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/QCQP_SOCP
-* Lecture 9 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/SDP
-* Lecture 10 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MICP
-* Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/BarrierFunctions
-* Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MiniMax
+* [Lecture 1 ](./Slides/Introduction/main.pdf)
+* [Lecture 2 ](./Slides/NullRowProjector/main.pdf)
+* [Lecture 3 ](./Slides/ColumnLeftNullApplications/main.pdf)
+* [Lecture 4 ](./Slides/LeastSquares_QuadraticProgramming/main.pdf)
+* [Lecture 5 ](./Slides/ConvexDomains/main.pdf)
+* [Lecture 6 ](./Slides/LMI_ConvexDomains/main.pdf)
+* [Lecture 7 ](./Slides/Linear_Programming/main.pdf)
+* [Lecture 8 ](./Slides/QCQP_SOCP/main.pdf)
+* [Lecture 9 ](./Slides/SDP/main.pdf)
+* [Lecture 10](./Slides/MICP/main.pdf)
+* [Lecture 11](./Slides/BarrierFunctions/main.pdf)
+* [Lecture 12](./Slides/MiniMax/main.pdf)
 
 
 # Lecture videos:
