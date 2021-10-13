@@ -1,32 +1,33 @@
 # Slides:
-* Lecture 1 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Introduction
-* Lecture 2 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/NullRowProjector
-* Lecture 3 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/ColumnLeftNullApplications
-* Lecture 4 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/LeastSquares_QuadraticProgramming
-* Lecture 5 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/ConvexDomains
-* Lecture 6 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/LMI_ConvexDomains
-* Lecture 7 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/Linear_Programming
-* Lecture 8 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/QCQP_SOCP
-* Lecture 9 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/SDP
-* Lecture 10 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MICP
-* Lecture 11 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/BarrierFunctions
-* Lecture 12 - https://github.com/SergeiSa/Computational-Intelligence-Slides-Spring-2021/tree/main/Slides/MiniMax
+* [Lecture 1 ](./Slides/Introduction/main.pdf)
+* [Lecture 2 ](./Slides/NullRowProjector/main.pdf)
+* [Lecture 3 ](./Slides/ColumnLeftNullApplications/main.pdf)
+* [Lecture 4 ](./Slides/LeastSquares_QuadraticProgramming/main.pdf)
+* [Lecture 5 ](./Slides/ConvexDomains/main.pdf)
+* [Lecture 6 ](./Slides/LMI_ConvexDomains/main.pdf)
+* [Lecture 7 ](./Slides/Linear_Programming/main.pdf)
+* [Lecture 8 ](./Slides/QCQP_SOCP/main.pdf)
+* [Lecture 9 ](./Slides/SDP/main.pdf)
+* [Lecture 10](./Slides/MICP/main.pdf)
+* [Lecture 11](./Slides/BarrierFunctions/main.pdf)
+* [Lecture 12](./Slides/MiniMax/main.pdf)
 
 
-# Lecture videos:
-* Class 1: https://youtu.be/YB-Pm6dPR7s
-* Class 2: https://youtu.be/B25aDL0knIQ
-* Class 3: https://youtu.be/G3698D8lMk4
-* Class 4: https://youtu.be/sU9H3KIdl_Q
-* Class 5: https://youtu.be/m1VBodm9fyA
-* Class 6 (practical session): https://youtu.be/JSt-6UBNyM4
-* Class 7: https://youtu.be/HaD7Swxh-mo
-* Class 8: (practical session) https://youtu.be/g_4F9BQrXnk
-* Class 9: https://youtu.be/4F_ycUf1lRk
-* Class 10: https://youtu.be/EPUGBSHsSLc
-* Class 11: https://youtu.be/7Dwa_7PfqJA
-* Class (MICP): https://youtu.be/GtSi2I-iRLI
-* Class (Minimax): https://youtu.be/KFOa_HzwreY
+# Videos:
+* [**Full playlist**](https://youtube.com/playlist?list=PLlxR_sEKjSpQpIgRykNdcwITKqXl3Gu-K)
+* [Class 1](https://youtu.be/YB-Pm6dPR7s)
+* [Class 2](https://youtu.be/B25aDL0knIQ)
+* [Class 3](https://youtu.be/G3698D8lMk4)
+* [Class 4](https://youtu.be/sU9H3KIdl_Q)
+* [Class 5](https://youtu.be/m1VBodm9fyA)
+* [Class 6 (practical session)](https://youtu.be/JSt-6UBNyM4)
+* [Class 7 ](https://youtu.be/HaD7Swxh-mo)
+* [Class 8 (practical session)](https://youtu.be/g_4F9BQrXnk)
+* [Class 9 ](https://youtu.be/4F_ycUf1lRk)
+* [Class 10](https://youtu.be/EPUGBSHsSLc)
+* [Class 11](https://youtu.be/7Dwa_7PfqJA)
+* [Class (MICP)](https://youtu.be/GtSi2I-iRLI)
+* [Class (Minimax)](https://youtu.be/KFOa_HzwreY)
 
 
 # Last year's videos:
@@ -46,9 +47,9 @@
 # Reference material
 
 ## Textbooks:
-* Boyd, S., Boyd, S.P. and Vandenberghe, L., 2004. Convex optimization. Cambridge university press. https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf
-* Kevin M.. Lynch and Park, F.C., 2017. Modern Robotics: Mechanics, Planning, and Control. Cambridge University Press. http://hades.mech.northwestern.edu/images/7/7f/MR.pdf
-* Siciliano, B., Sciavicco L. Villani L. & Oriolo G.,(2009) Robotic–Modelling, Planning and Control. https://www.academia.edu/23785978/B_Sicilliano_Robotics_Modelling_Planning_and_Control
+* [Boyd, S., Boyd, S.P. and Vandenberghe, L., 2004. Convex optimization. Cambridge university press](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)
+* [Kevin M.. Lynch and Park, F.C., 2017. Modern Robotics: Mechanics, Planning, and Control. Cambridge University Press](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf)
+* [Siciliano, B., Sciavicco L. Villani L. & Oriolo G.,(2009) Robotic–Modelling, Planning and Control](https://www.academia.edu/23785978/B_Sicilliano_Robotics_Modelling_Planning_and_Control)
 
 ## References for lectures:
 * Lecture 2, 3: 
@@ -60,12 +61,12 @@
 Optimization](https://groups.csail.mit.edu/robotics-center/public_papers/Deits14a.pdf)
 
 * LMI in Control:
-    - Continious feedback design (+examples of dual problems) MAE598 (LMIs in Control) - https://youtu.be/iI3zRAjuG_U
-    - Discrete feedback design (+examples of dual problems and Schur complement) MAE598 (LMIs in Control) - https://youtu.be/oqXvkgSN-Zc
-    - Luenberger Observer design MAE598 (LMIs in Control) - https://youtu.be/eSY8Fwp2dQo
-    - Kalman Filters MAE598 (LMIs in Control) - https://youtu.be/Ahzg-Tj7aEU
+    - [Continious feedback design (+examples of dual problems) MAE598 (LMIs in Control)](https://youtu.be/iI3zRAjuG_U)
+    - [Discrete feedback design (+examples of dual problems and Schur complement) MAE598 (LMIs in Control)](https://youtu.be/oqXvkgSN-Zc)
+    - [Luenberger Observer design MAE598 (LMIs in Control)](https://youtu.be/eSY8Fwp2dQo)
+    - [Kalman Filters MAE598 (LMIs in Control)](https://youtu.be/Ahzg-Tj7aEU)
 
-* Schur complement - https://www.cis.upenn.edu/~jean/schur-comp.pdf
+* [Schur complement](https://www.cis.upenn.edu/~jean/schur-comp.pdf)
 
 # For contributors:
 
